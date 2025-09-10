@@ -1,2 +1,2 @@
-# niunius-backend
+# newnews-backend
 News Aggregator Backend
