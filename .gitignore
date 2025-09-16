@@ -25,3 +25,5 @@ newnews-*.tar
 .env
 .env.*
 !.env.example
+.DS_Store
+output

@@ -1,5 +1,5 @@
 # newnews-backend
-The backend of my news aggregator
+The backend of my US stock news aggregator
 
 ## Pre-requisite
 - just
@@ -23,3 +23,9 @@ The backend of my news aggregator
 - [ ] Start a HTTP server for auth
   - [ ] OAuth using google
 - [ ] Socket connection
+
+## Non Product Targets
+- [ ] Learn Elixir
+- [ ] Learn Socket
+  - [ ] How to build a protocol (via socket)
+- [ ] Rawdog a service that can login via oauth
