@@ -1,13 +1,25 @@
 defmodule Newnews.Crawler.Constant do
-  # maybe turn into json and read later
+  # maybe turn into json 
   def default(:newsapiai) do
     %{
-      action: "getArticles",
-      forceMaxDataTimeWindow: 7,
       apiKey: api_key(:newsapiai),
+
+      # response related config
+      includeArticleTitle: true,
+      includeArticleBody: false,
+      includeArticleConcepts: true,
+      includeArticleCategories: true,
+
+      # default filter to only search for us news
       lang: "eng",
       sourceLocationUri: "http://en.wikipedia.org/wiki/United_States",
-      includeArticleBody: false,
+
+      # misc filter options
+      isDuplicateFilter: "skipDuplicates",
+      conceptOper: "or",
+      categoryOper: "or",
+      keywordOper: "or",
+      keywordLoc: "title"
     }
   end
 
@@ -34,7 +46,7 @@ defmodule Newnews.Crawler.Constant do
   end
 
   def api_host(_) do
-   :notsupported
+    :notsupported
   end
 
   def api_key(:newsapiai) do
@@ -46,7 +58,7 @@ defmodule Newnews.Crawler.Constant do
   end
 
   def api_key(_) do
-   :notsupported
+    :notsupported
   end
 
   def get_news_api_url(:newsapiai) do
@@ -58,6 +70,6 @@ defmodule Newnews.Crawler.Constant do
   end
 
   def get_news_api_url(_) do
-   :notsupported
+    :notsupported
   end
 end
