@@ -1,4 +1,4 @@
-# newnews-backend
+# Newnews Backend
 The backend of my US stock news aggregator
 
 ## Pre-requisite
@@ -13,6 +13,12 @@ The backend of my US stock news aggregator
   - Push news
   - Accept new keyword / category, search and push
 
+## Goal
+- [ ] Learn Elixir
+- [ ] Learn Socket
+  - [ ] How to build a protocol (via socket)
+- [ ] Rawdog a service that can login via oauth
+
 ## TODO
 - [x] Figure out how to properly use Mix (i hope my current implementation is proper)
 - [ ] News API Crawler 
@@ -24,8 +30,3 @@ The backend of my US stock news aggregator
   - [ ] OAuth using google
 - [ ] Socket connection
 
-## Non Product Targets
-- [ ] Learn Elixir
-- [ ] Learn Socket
-  - [ ] How to build a protocol (via socket)
-- [ ] Rawdog a service that can login via oauth
